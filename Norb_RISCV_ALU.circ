@@ -4,9 +4,9 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="west"/>
+      <a name="facing" val="north"/>
       <a name="fanout" val="32"/>
-      <a name="incoming" val="1"/>
+      <a name="incoming" val="32"/>
     </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
@@ -27,8 +27,7 @@
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
   <lib desc="#HDL-IP" name="12"/>
-  <lib desc="file#Norb_StdLib.circ" name="13"/>
-  <main name="Norb_8B_CRA"/>
+  <main name="Norb_ALU_8B_CRA"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -71,9 +70,9 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="Norb_8B_CRA">
+  <circuit name="Norb_ALU_8B_CRA">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_8B_CRA"/>
+    <a name="circuit" val="Norb_ALU_8B_CRA"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(200,390)" name="Pin">
@@ -504,9 +503,9 @@
     <wire from="(980,760)" to="(980,800)"/>
     <wire from="(980,800)" to="(1000,800)"/>
   </circuit>
-  <circuit name="Norb_8B_CRS">
+  <circuit name="Norb_ALU_8B_CRS">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_8B_CRS"/>
+    <a name="circuit" val="Norb_ALU_8B_CRS"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(200,390)" name="Pin">
@@ -969,9 +968,9 @@
     <wire from="(980,760)" to="(980,800)"/>
     <wire from="(980,800)" to="(1000,800)"/>
   </circuit>
-  <circuit name="Norb_RISCV_ALU">
+  <circuit name="Norb_ALU_RISCV_ALU">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_RISCV_ALU"/>
+    <a name="circuit" val="Norb_ALU_RISCV_ALU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(240,220)" name="Pin">
@@ -998,8 +997,8 @@
       <a name="size" val="30"/>
       <a name="width" val="8"/>
     </comp>
-    <comp loc="(550,540)" name="Norb_8B_CRA"/>
-    <comp loc="(550,600)" name="Norb_8B_CRS"/>
+    <comp loc="(550,540)" name="Norb_ALU_8B_CRA"/>
+    <comp loc="(550,600)" name="Norb_ALU_8B_CRS"/>
     <wire from="(240,220)" to="(240,540)"/>
     <wire from="(240,540)" to="(240,600)"/>
     <wire from="(240,540)" to="(330,540)"/>
@@ -1024,9 +1023,9 @@
     <wire from="(280,760)" to="(500,760)"/>
     <wire from="(330,600)" to="(340,600)"/>
   </circuit>
-  <circuit name="Norb_32B_CRA">
+  <circuit name="Norb_ALU_32B_CRA">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_32B_CRA"/>
+    <a name="circuit" val="Norb_ALU_32B_CRA"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1070,650)" name="Pin">
@@ -1059,22 +1058,19 @@
       <a name="facing" val="south"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="13" loc="(1070,650)" name="Norb_8B32B_Splitter"/>
-    <comp lib="13" loc="(400,210)" name="Norb_32B8B_Splitter"/>
-    <comp lib="13" loc="(400,310)" name="Norb_32B8B_Splitter"/>
-    <comp loc="(490,640)" name="Norb_8B_CRA">
+    <comp loc="(490,640)" name="Norb_ALU_8B_CRA">
       <a name="facing" val="south"/>
       <a name="labelloc" val="west"/>
     </comp>
-    <comp loc="(590,640)" name="Norb_8B_CRA">
+    <comp loc="(590,640)" name="Norb_ALU_8B_CRA">
       <a name="facing" val="south"/>
       <a name="labelloc" val="west"/>
     </comp>
-    <comp loc="(690,640)" name="Norb_8B_CRA">
+    <comp loc="(690,640)" name="Norb_ALU_8B_CRA">
       <a name="facing" val="south"/>
       <a name="labelloc" val="west"/>
     </comp>
-    <comp loc="(790,640)" name="Norb_8B_CRA">
+    <comp loc="(790,640)" name="Norb_ALU_8B_CRA">
       <a name="facing" val="south"/>
       <a name="labelloc" val="west"/>
     </comp>
@@ -1115,9 +1111,9 @@
     <wire from="(820,620)" to="(1120,620)"/>
     <wire from="(820,620)" to="(820,640)"/>
   </circuit>
-  <circuit name="Norb_32B_CRS">
+  <circuit name="Norb_ALU_32B_CRS">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_32B_CRS"/>
+    <a name="circuit" val="Norb_ALU_32B_CRS"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1070,650)" name="Pin">
@@ -1149,19 +1145,16 @@
     <comp lib="0" loc="(450,420)" name="Constant">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(1070,650)" name="Norb_8B32B_Splitter"/>
-    <comp lib="13" loc="(400,210)" name="Norb_32B8B_Splitter"/>
-    <comp lib="13" loc="(400,310)" name="Norb_32B8B_Splitter"/>
-    <comp loc="(490,640)" name="Norb_8B_CRS">
+    <comp loc="(490,640)" name="Norb_ALU_8B_CRS">
       <a name="facing" val="south"/>
     </comp>
-    <comp loc="(590,640)" name="Norb_8B_CRS">
+    <comp loc="(590,640)" name="Norb_ALU_8B_CRS">
       <a name="facing" val="south"/>
     </comp>
-    <comp loc="(690,640)" name="Norb_8B_CRS">
+    <comp loc="(690,640)" name="Norb_ALU_8B_CRS">
       <a name="facing" val="south"/>
     </comp>
-    <comp loc="(790,640)" name="Norb_8B_CRS">
+    <comp loc="(790,640)" name="Norb_ALU_8B_CRS">
       <a name="facing" val="south"/>
     </comp>
     <wire from="(400,210)" to="(490,210)"/>
@@ -1201,9 +1194,9 @@
     <wire from="(820,620)" to="(1120,620)"/>
     <wire from="(820,620)" to="(820,640)"/>
   </circuit>
-  <circuit name="Norb_32B_SLT">
+  <circuit name="Norb_ALU_32B_SSLT">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_32B_SLT"/>
+    <a name="circuit" val="Norb_ALU_32B_SSLT"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(250,180)" name="Pin">
@@ -1217,61 +1210,40 @@
       <a name="fanout" val="32"/>
       <a name="incoming" val="32"/>
     </comp>
-    <comp lib="0" loc="(600,190)" name="Splitter">
+    <comp lib="0" loc="(580,180)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(590,220)" name="Pin">
+      <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="OutLS1"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(590,220)" name="Splitter">
+      <a name="facing" val="north"/>
       <a name="fanout" val="32"/>
       <a name="incoming" val="32"/>
     </comp>
-    <wire from="(260,200)" to="(260,1940)"/>
-    <wire from="(270,200)" to="(270,1940)"/>
-    <wire from="(280,200)" to="(280,1940)"/>
-    <wire from="(290,200)" to="(290,1940)"/>
-    <wire from="(300,200)" to="(300,1940)"/>
-    <wire from="(310,200)" to="(310,1940)"/>
-    <wire from="(320,200)" to="(320,1940)"/>
-    <wire from="(330,200)" to="(330,1940)"/>
-    <wire from="(340,200)" to="(340,1940)"/>
-    <wire from="(350,200)" to="(350,1940)"/>
-    <wire from="(360,200)" to="(360,1940)"/>
-    <wire from="(370,200)" to="(370,1940)"/>
-    <wire from="(380,200)" to="(380,1940)"/>
-    <wire from="(390,200)" to="(390,1940)"/>
-    <wire from="(400,200)" to="(400,1940)"/>
-    <wire from="(410,200)" to="(410,1940)"/>
-    <wire from="(420,200)" to="(420,1940)"/>
-    <wire from="(430,200)" to="(430,1940)"/>
-    <wire from="(440,200)" to="(440,1940)"/>
-    <wire from="(450,200)" to="(450,1940)"/>
-    <wire from="(460,200)" to="(460,1940)"/>
-    <wire from="(470,200)" to="(470,1940)"/>
-    <wire from="(480,200)" to="(480,290)"/>
-    <wire from="(480,290)" to="(480,1940)"/>
-    <wire from="(480,290)" to="(580,290)"/>
-    <wire from="(490,200)" to="(490,280)"/>
-    <wire from="(490,280)" to="(490,1940)"/>
-    <wire from="(490,280)" to="(580,280)"/>
-    <wire from="(500,200)" to="(500,270)"/>
-    <wire from="(500,270)" to="(500,1940)"/>
-    <wire from="(500,270)" to="(580,270)"/>
-    <wire from="(510,200)" to="(510,260)"/>
-    <wire from="(510,260)" to="(510,1940)"/>
-    <wire from="(510,260)" to="(580,260)"/>
-    <wire from="(520,200)" to="(520,250)"/>
-    <wire from="(520,250)" to="(520,1940)"/>
-    <wire from="(520,250)" to="(580,250)"/>
-    <wire from="(530,200)" to="(530,240)"/>
-    <wire from="(530,240)" to="(530,1940)"/>
-    <wire from="(530,240)" to="(580,240)"/>
-    <wire from="(540,200)" to="(540,230)"/>
-    <wire from="(540,230)" to="(540,1940)"/>
-    <wire from="(540,230)" to="(580,230)"/>
-    <wire from="(550,200)" to="(550,220)"/>
-    <wire from="(550,220)" to="(550,1940)"/>
-    <wire from="(550,220)" to="(580,220)"/>
-    <wire from="(560,200)" to="(560,210)"/>
-    <wire from="(560,210)" to="(560,1940)"/>
-    <wire from="(560,210)" to="(580,210)"/>
-    <wire from="(570,200)" to="(570,1940)"/>
-    <wire from="(570,200)" to="(580,200)"/>
+    <wire from="(580,180)" to="(580,200)"/>
+  </circuit>
+  <circuit name="Norb_ALU_32B_SLT">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Norb_ALU_32B_SLT"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(250,180)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="InNum"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp loc="(470,180)" name="Norb_ALU_32B_SSLT"/>
+    <comp loc="(470,240)" name="Norb_ALU_32B_SSLT"/>
+    <wire from="(250,220)" to="(250,240)"/>
+    <wire from="(250,220)" to="(470,220)"/>
+    <wire from="(470,180)" to="(470,220)"/>
   </circuit>
 </project>
