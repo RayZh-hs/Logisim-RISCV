@@ -4,8 +4,9 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="spacing" val="4"/>
+      <a name="facing" val="north"/>
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
     </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
@@ -41,7 +42,7 @@
     <sep/>
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
-      <a name="facing" val="north"/>
+      <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </tool>
     <sep/>
@@ -520,6 +521,82 @@
     <wire from="(600,370)" to="(600,390)"/>
     <wire from="(600,390)" to="(630,390)"/>
     <wire from="(710,430)" to="(720,430)"/>
+  </circuit>
+  <circuit name="Norb_5B_Matcher">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Norb_5B_Matcher"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(280,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="In8B_A"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(280,310)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="In8B_B"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(300,280)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="spacing" val="4"/>
+    </comp>
+    <comp lib="0" loc="(320,310)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="spacing" val="4"/>
+    </comp>
+    <comp lib="0" loc="(720,450)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OutAEqB"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(320,370)" name="XOR Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(360,370)" name="XOR Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(400,370)" name="XOR Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(440,370)" name="XOR Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(480,370)" name="XOR Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(710,450)" name="NOR Gate">
+      <a name="inputs" val="5"/>
+      <a name="size" val="70"/>
+    </comp>
+    <wire from="(280,280)" to="(300,280)"/>
+    <wire from="(280,310)" to="(320,310)"/>
+    <wire from="(310,300)" to="(310,330)"/>
+    <wire from="(320,370)" to="(320,470)"/>
+    <wire from="(320,470)" to="(630,470)"/>
+    <wire from="(350,300)" to="(350,330)"/>
+    <wire from="(360,370)" to="(360,460)"/>
+    <wire from="(360,460)" to="(630,460)"/>
+    <wire from="(390,300)" to="(390,330)"/>
+    <wire from="(400,370)" to="(400,450)"/>
+    <wire from="(400,450)" to="(630,450)"/>
+    <wire from="(430,300)" to="(430,330)"/>
+    <wire from="(440,370)" to="(440,440)"/>
+    <wire from="(440,440)" to="(630,440)"/>
+    <wire from="(470,300)" to="(470,330)"/>
+    <wire from="(480,370)" to="(480,430)"/>
+    <wire from="(480,430)" to="(630,430)"/>
+    <wire from="(710,450)" to="(720,450)"/>
   </circuit>
   <circuit name="Norb_3B_Matcher">
     <a name="appearance" val="logisim_evolution"/>
@@ -1198,5 +1275,180 @@
     <wire from="(240,140)" to="(270,140)"/>
     <wire from="(280,160)" to="(280,190)"/>
     <wire from="(320,160)" to="(320,180)"/>
+  </circuit>
+  <circuit name="Norb_8B32B_Splitter">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Norb_8B32B_Splitter"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(280,240)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="In0"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(280,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="In1"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(280,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="In2"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(280,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="In3"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(280,300)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(360,280)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(440,260)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(520,240)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(610,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Out32B"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(610,340)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
+    </comp>
+    <wire from="(280,240)" to="(520,240)"/>
+    <wire from="(280,260)" to="(440,260)"/>
+    <wire from="(280,280)" to="(360,280)"/>
+    <wire from="(370,300)" to="(370,320)"/>
+    <wire from="(380,300)" to="(380,320)"/>
+    <wire from="(390,300)" to="(390,320)"/>
+    <wire from="(400,300)" to="(400,320)"/>
+    <wire from="(410,300)" to="(410,320)"/>
+    <wire from="(420,300)" to="(420,320)"/>
+    <wire from="(430,300)" to="(430,320)"/>
+    <wire from="(440,300)" to="(440,320)"/>
+    <wire from="(450,280)" to="(450,320)"/>
+    <wire from="(460,280)" to="(460,320)"/>
+    <wire from="(470,280)" to="(470,320)"/>
+    <wire from="(480,280)" to="(480,320)"/>
+    <wire from="(490,280)" to="(490,320)"/>
+    <wire from="(500,280)" to="(500,320)"/>
+    <wire from="(510,280)" to="(510,320)"/>
+    <wire from="(520,280)" to="(520,320)"/>
+    <wire from="(530,260)" to="(530,320)"/>
+    <wire from="(540,260)" to="(540,320)"/>
+    <wire from="(550,260)" to="(550,320)"/>
+    <wire from="(560,260)" to="(560,320)"/>
+    <wire from="(570,260)" to="(570,320)"/>
+    <wire from="(580,260)" to="(580,320)"/>
+    <wire from="(590,260)" to="(590,320)"/>
+    <wire from="(600,260)" to="(600,320)"/>
+  </circuit>
+  <circuit name="Norb_32B8B_Splitter">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Norb_32B8B_Splitter"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(280,240)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Out0"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(280,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Out1"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(280,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Out2"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(280,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Out3"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(280,300)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(360,280)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(440,260)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(520,240)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(610,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="In32B"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(610,340)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
+    </comp>
+    <wire from="(280,240)" to="(520,240)"/>
+    <wire from="(280,260)" to="(440,260)"/>
+    <wire from="(280,280)" to="(360,280)"/>
+    <wire from="(370,300)" to="(370,320)"/>
+    <wire from="(380,300)" to="(380,320)"/>
+    <wire from="(390,300)" to="(390,320)"/>
+    <wire from="(400,300)" to="(400,320)"/>
+    <wire from="(410,300)" to="(410,320)"/>
+    <wire from="(420,300)" to="(420,320)"/>
+    <wire from="(430,300)" to="(430,320)"/>
+    <wire from="(440,300)" to="(440,320)"/>
+    <wire from="(450,280)" to="(450,320)"/>
+    <wire from="(460,280)" to="(460,320)"/>
+    <wire from="(470,280)" to="(470,320)"/>
+    <wire from="(480,280)" to="(480,320)"/>
+    <wire from="(490,280)" to="(490,320)"/>
+    <wire from="(500,280)" to="(500,320)"/>
+    <wire from="(510,280)" to="(510,320)"/>
+    <wire from="(520,280)" to="(520,320)"/>
+    <wire from="(530,260)" to="(530,320)"/>
+    <wire from="(540,260)" to="(540,320)"/>
+    <wire from="(550,260)" to="(550,320)"/>
+    <wire from="(560,260)" to="(560,320)"/>
+    <wire from="(570,260)" to="(570,320)"/>
+    <wire from="(580,260)" to="(580,320)"/>
+    <wire from="(590,260)" to="(590,320)"/>
+    <wire from="(600,260)" to="(600,320)"/>
   </circuit>
 </project>
