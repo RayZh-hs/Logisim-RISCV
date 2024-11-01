@@ -23,7 +23,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="Norb_8B_Selector"/>
+  <main name="Norb_STD_8B_Selector"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -64,9 +64,9 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="Norb_8B_Selector">
+  <circuit name="Norb_STD_8B_Selector">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_8B_Selector"/>
+    <a name="circuit" val="Norb_STD_8B_Selector"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(280,280)" name="Pin">
@@ -164,9 +164,9 @@
     <wire from="(590,300)" to="(590,330)"/>
     <wire from="(590,390)" to="(600,390)"/>
   </circuit>
-  <circuit name="Norb_32B_Selector">
+  <circuit name="Norb_STD_32B_Selector">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_32B_Selector"/>
+    <a name="circuit" val="Norb_STD_32B_Selector"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(190,370)" name="Pin">
@@ -187,12 +187,12 @@
       <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
-    <comp loc="(420,150)" name="Norb_32B8B_Splitter"/>
-    <comp loc="(710,150)" name="Norb_8B_Selector"/>
-    <comp loc="(710,210)" name="Norb_8B_Selector"/>
-    <comp loc="(710,270)" name="Norb_8B_Selector"/>
-    <comp loc="(710,330)" name="Norb_8B_Selector"/>
-    <comp loc="(950,150)" name="Norb_8B32B_Splitter"/>
+    <comp loc="(420,150)" name="Norb_STD_32B8B_Splitter"/>
+    <comp loc="(710,150)" name="Norb_STD_8B_Selector"/>
+    <comp loc="(710,210)" name="Norb_STD_8B_Selector"/>
+    <comp loc="(710,270)" name="Norb_STD_8B_Selector"/>
+    <comp loc="(710,330)" name="Norb_STD_8B_Selector"/>
+    <comp loc="(950,150)" name="Norb_STD_8B32B_Splitter"/>
     <wire from="(190,370)" to="(480,370)"/>
     <wire from="(420,150)" to="(490,150)"/>
     <wire from="(420,170)" to="(470,170)"/>
@@ -222,9 +222,9 @@
     <wire from="(720,190)" to="(730,190)"/>
     <wire from="(730,210)" to="(730,330)"/>
   </circuit>
-  <circuit name="Norb_1T2_Decoder">
+  <circuit name="Norb_STD_1T2_Decoder">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_1T2_Decoder"/>
+    <a name="circuit" val="Norb_STD_1T2_Decoder"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(230,250)" name="Pin">
@@ -250,9 +250,9 @@
     <wire from="(260,270)" to="(290,270)"/>
     <wire from="(320,270)" to="(380,270)"/>
   </circuit>
-  <circuit name="Norb_2T4_Decoder">
+  <circuit name="Norb_STD_2T4_Decoder">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_2T4_Decoder"/>
+    <a name="circuit" val="Norb_STD_2T4_Decoder"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(230,300)" name="Pin">
@@ -305,8 +305,8 @@
     <comp lib="1" loc="(550,520)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp loc="(470,360)" name="Norb_1T2_Decoder"/>
-    <comp loc="(470,490)" name="Norb_1T2_Decoder"/>
+    <comp loc="(470,360)" name="Norb_STD_1T2_Decoder"/>
+    <comp loc="(470,490)" name="Norb_STD_1T2_Decoder"/>
     <wire from="(240,320)" to="(240,360)"/>
     <wire from="(240,360)" to="(240,490)"/>
     <wire from="(240,360)" to="(250,360)"/>
@@ -330,9 +330,9 @@
     <wire from="(550,480)" to="(570,480)"/>
     <wire from="(550,520)" to="(570,520)"/>
   </circuit>
-  <circuit name="Norb_3T8_Decoder">
+  <circuit name="Norb_STD_3T8_Decoder">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_3T8_Decoder"/>
+    <a name="circuit" val="Norb_STD_3T8_Decoder"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(230,300)" name="Pin">
@@ -430,8 +430,8 @@
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
     </comp>
-    <comp loc="(460,570)" name="Norb_2T4_Decoder"/>
-    <comp loc="(470,360)" name="Norb_2T4_Decoder"/>
+    <comp loc="(460,570)" name="Norb_STD_2T4_Decoder"/>
+    <comp loc="(470,360)" name="Norb_STD_2T4_Decoder"/>
     <wire from="(240,320)" to="(240,360)"/>
     <wire from="(240,360)" to="(240,570)"/>
     <wire from="(240,360)" to="(250,360)"/>
@@ -483,9 +483,9 @@
     <wire from="(640,570)" to="(640,670)"/>
     <wire from="(640,570)" to="(690,570)"/>
   </circuit>
-  <circuit name="Norb_8B_Matcher">
+  <circuit name="Norb_STD_8B_Matcher">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_8B_Matcher"/>
+    <a name="circuit" val="Norb_STD_8B_Matcher"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(280,280)" name="Pin">
@@ -580,9 +580,9 @@
     <wire from="(600,390)" to="(630,390)"/>
     <wire from="(710,430)" to="(720,430)"/>
   </circuit>
-  <circuit name="Norb_5B_Matcher">
+  <circuit name="Norb_STD_5B_Matcher">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_5B_Matcher"/>
+    <a name="circuit" val="Norb_STD_5B_Matcher"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(280,280)" name="Pin">
@@ -656,9 +656,9 @@
     <wire from="(480,430)" to="(630,430)"/>
     <wire from="(710,450)" to="(720,450)"/>
   </circuit>
-  <circuit name="Norb_3B_Matcher">
+  <circuit name="Norb_STD_3B_Matcher">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_3B_Matcher"/>
+    <a name="circuit" val="Norb_STD_3B_Matcher"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(280,280)" name="Pin">
@@ -718,9 +718,9 @@
     <wire from="(400,450)" to="(430,450)"/>
     <wire from="(470,460)" to="(480,460)"/>
   </circuit>
-  <circuit name="Norb_7B_Matcher">
+  <circuit name="Norb_STD_7B_Matcher">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_7B_Matcher"/>
+    <a name="circuit" val="Norb_STD_7B_Matcher"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(280,280)" name="Pin">
@@ -808,9 +808,9 @@
     <wire from="(560,400)" to="(630,400)"/>
     <wire from="(710,430)" to="(720,430)"/>
   </circuit>
-  <circuit name="Norb_RType_Splitter">
+  <circuit name="Norb_STD_RType_Splitter">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_RType_Splitter"/>
+    <a name="circuit" val="Norb_STD_RType_Splitter"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(240,140)" name="Pin">
@@ -904,9 +904,9 @@
     <wire from="(400,160)" to="(400,200)"/>
     <wire from="(440,160)" to="(440,180)"/>
   </circuit>
-  <circuit name="Norb_IType_Splitter">
+  <circuit name="Norb_STD_IType_Splitter">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_IType_Splitter"/>
+    <a name="circuit" val="Norb_STD_IType_Splitter"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(240,140)" name="Pin">
@@ -994,9 +994,9 @@
     <wire from="(360,160)" to="(360,200)"/>
     <wire from="(400,160)" to="(400,180)"/>
   </circuit>
-  <circuit name="Norb_SType_Splitter">
+  <circuit name="Norb_STD_SType_Splitter">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_SType_Splitter"/>
+    <a name="circuit" val="Norb_STD_SType_Splitter"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(240,140)" name="Pin">
@@ -1090,9 +1090,9 @@
     <wire from="(400,160)" to="(400,200)"/>
     <wire from="(440,160)" to="(440,180)"/>
   </circuit>
-  <circuit name="Norb_BType_Splitter">
+  <circuit name="Norb_STD_BType_Splitter">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_BType_Splitter"/>
+    <a name="circuit" val="Norb_STD_BType_Splitter"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(240,140)" name="Pin">
@@ -1186,9 +1186,9 @@
     <wire from="(400,160)" to="(400,200)"/>
     <wire from="(440,160)" to="(440,180)"/>
   </circuit>
-  <circuit name="Norb_UType_Splitter">
+  <circuit name="Norb_STD_UType_Splitter">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_UType_Splitter"/>
+    <a name="circuit" val="Norb_STD_UType_Splitter"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(240,140)" name="Pin">
@@ -1260,9 +1260,9 @@
     <wire from="(280,160)" to="(280,190)"/>
     <wire from="(320,160)" to="(320,180)"/>
   </circuit>
-  <circuit name="Norb_JType_Splitter">
+  <circuit name="Norb_STD_JType_Splitter">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_JType_Splitter"/>
+    <a name="circuit" val="Norb_STD_JType_Splitter"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(240,140)" name="Pin">
@@ -1334,9 +1334,9 @@
     <wire from="(280,160)" to="(280,190)"/>
     <wire from="(320,160)" to="(320,180)"/>
   </circuit>
-  <circuit name="Norb_8B32B_Splitter">
+  <circuit name="Norb_STD_8B32B_Splitter">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_8B32B_Splitter"/>
+    <a name="circuit" val="Norb_STD_8B32B_Splitter"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(280,240)" name="Pin">
@@ -1420,9 +1420,9 @@
     <wire from="(590,260)" to="(590,320)"/>
     <wire from="(600,260)" to="(600,320)"/>
   </circuit>
-  <circuit name="Norb_32B8B_Splitter">
+  <circuit name="Norb_STD_32B8B_Splitter">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Norb_32B8B_Splitter"/>
+    <a name="circuit" val="Norb_STD_32B8B_Splitter"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(280,240)" name="Pin">
