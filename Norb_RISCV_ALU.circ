@@ -4,7 +4,7 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="south"/>
+      <a name="facing" val="west"/>
       <a name="fanout" val="32"/>
       <a name="incoming" val="1"/>
     </tool>
@@ -45,9 +45,7 @@
     <tool lib="8" name="Wiring Tool"/>
     <tool lib="8" name="Text Tool"/>
     <sep/>
-    <tool lib="0" name="Pin">
-      <a name="radix" val="16"/>
-    </tool>
+    <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -97,7 +95,6 @@
     <comp lib="0" loc="(230,780)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="CarryIn"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(440,940)" name="Splitter">
       <a name="facing" val="north"/>
@@ -532,7 +529,6 @@
       <a name="appearance" val="NewPins"/>
       <a name="initial" val="0x1"/>
       <a name="label" val="CarryIn"/>
-      <a name="radix" val="16"/>
     </comp>
     <comp lib="0" loc="(440,940)" name="Splitter">
       <a name="facing" val="north"/>
@@ -1221,8 +1217,61 @@
       <a name="fanout" val="32"/>
       <a name="incoming" val="32"/>
     </comp>
-    <wire from="(550,200)" to="(550,1070)"/>
-    <wire from="(560,200)" to="(560,1070)"/>
-    <wire from="(570,200)" to="(570,1070)"/>
+    <comp lib="0" loc="(600,190)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
+    </comp>
+    <wire from="(260,200)" to="(260,1940)"/>
+    <wire from="(270,200)" to="(270,1940)"/>
+    <wire from="(280,200)" to="(280,1940)"/>
+    <wire from="(290,200)" to="(290,1940)"/>
+    <wire from="(300,200)" to="(300,1940)"/>
+    <wire from="(310,200)" to="(310,1940)"/>
+    <wire from="(320,200)" to="(320,1940)"/>
+    <wire from="(330,200)" to="(330,1940)"/>
+    <wire from="(340,200)" to="(340,1940)"/>
+    <wire from="(350,200)" to="(350,1940)"/>
+    <wire from="(360,200)" to="(360,1940)"/>
+    <wire from="(370,200)" to="(370,1940)"/>
+    <wire from="(380,200)" to="(380,1940)"/>
+    <wire from="(390,200)" to="(390,1940)"/>
+    <wire from="(400,200)" to="(400,1940)"/>
+    <wire from="(410,200)" to="(410,1940)"/>
+    <wire from="(420,200)" to="(420,1940)"/>
+    <wire from="(430,200)" to="(430,1940)"/>
+    <wire from="(440,200)" to="(440,1940)"/>
+    <wire from="(450,200)" to="(450,1940)"/>
+    <wire from="(460,200)" to="(460,1940)"/>
+    <wire from="(470,200)" to="(470,1940)"/>
+    <wire from="(480,200)" to="(480,290)"/>
+    <wire from="(480,290)" to="(480,1940)"/>
+    <wire from="(480,290)" to="(580,290)"/>
+    <wire from="(490,200)" to="(490,280)"/>
+    <wire from="(490,280)" to="(490,1940)"/>
+    <wire from="(490,280)" to="(580,280)"/>
+    <wire from="(500,200)" to="(500,270)"/>
+    <wire from="(500,270)" to="(500,1940)"/>
+    <wire from="(500,270)" to="(580,270)"/>
+    <wire from="(510,200)" to="(510,260)"/>
+    <wire from="(510,260)" to="(510,1940)"/>
+    <wire from="(510,260)" to="(580,260)"/>
+    <wire from="(520,200)" to="(520,250)"/>
+    <wire from="(520,250)" to="(520,1940)"/>
+    <wire from="(520,250)" to="(580,250)"/>
+    <wire from="(530,200)" to="(530,240)"/>
+    <wire from="(530,240)" to="(530,1940)"/>
+    <wire from="(530,240)" to="(580,240)"/>
+    <wire from="(540,200)" to="(540,230)"/>
+    <wire from="(540,230)" to="(540,1940)"/>
+    <wire from="(540,230)" to="(580,230)"/>
+    <wire from="(550,200)" to="(550,220)"/>
+    <wire from="(550,220)" to="(550,1940)"/>
+    <wire from="(550,220)" to="(580,220)"/>
+    <wire from="(560,200)" to="(560,210)"/>
+    <wire from="(560,210)" to="(560,1940)"/>
+    <wire from="(560,210)" to="(580,210)"/>
+    <wire from="(570,200)" to="(570,1940)"/>
+    <wire from="(570,200)" to="(580,200)"/>
   </circuit>
 </project>
