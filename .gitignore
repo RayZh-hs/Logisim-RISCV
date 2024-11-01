@@ -129,3 +129,10 @@ dmypy.json
 
 # Logisim autosave
 *.autosave
+
+# Purref related files
+*.pur
+
+# VSCode related files
+.vscode/
+.vscode/*
