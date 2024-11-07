@@ -136,3 +136,7 @@ dmypy.json
 # VSCode related files
 .vscode/
 .vscode/*
+
+# Powerpoint files
+*.pptx
+*.ppt
