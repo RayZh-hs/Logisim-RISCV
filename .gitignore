@@ -136,6 +136,8 @@ dmypy.json
 # VSCode related files
 .vscode/
 .vscode/*
+Norb_StdLib.circ.orig
+
 
 # Powerpoint files
 *.pptx
