@@ -83,7 +83,7 @@
     <a name="circuit" val="Norb_ALU_RISCV_ALU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(1190,190)" name="Pin">
+    <comp lib="0" loc="(1190,140)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
@@ -255,6 +255,7 @@
     <wire from="(1170,600)" to="(1260,600)"/>
     <wire from="(1180,220)" to="(1180,680)"/>
     <wire from="(1180,680)" to="(1260,680)"/>
+    <wire from="(1190,140)" to="(1190,190)"/>
     <wire from="(1200,220)" to="(1200,760)"/>
     <wire from="(1200,760)" to="(1260,760)"/>
     <wire from="(1210,220)" to="(1210,900)"/>
