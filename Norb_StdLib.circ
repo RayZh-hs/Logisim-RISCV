@@ -1833,6 +1833,260 @@
     <wire from="(590,260)" to="(590,320)"/>
     <wire from="(600,260)" to="(600,320)"/>
   </circuit>
+  <circuit name="Norb_STD_1B2T_Delayer">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Norb_STD_1B2T_Delayer"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(180,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="SIGIN"/>
+    </comp>
+    <comp lib="0" loc="(180,440)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLOCK"/>
+    </comp>
+    <comp lib="0" loc="(410,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="SIGOUT"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(330,410)" name="NOT Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="4" loc="(250,350)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(340,350)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(180,360)" to="(240,360)"/>
+    <wire from="(180,440)" to="(240,440)"/>
+    <wire from="(240,400)" to="(240,440)"/>
+    <wire from="(240,440)" to="(330,440)"/>
+    <wire from="(300,360)" to="(330,360)"/>
+    <wire from="(330,400)" to="(330,410)"/>
+    <wire from="(330,430)" to="(330,440)"/>
+    <wire from="(390,360)" to="(410,360)"/>
+  </circuit>
+  <circuit name="Norb_STD_2B2T_Delayer">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Norb_STD_2B2T_Delayer"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(180,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="SIGIN"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(180,360)" name="Splitter">
+      <a name="spacing" val="6"/>
+    </comp>
+    <comp lib="0" loc="(180,440)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLOCK"/>
+    </comp>
+    <comp lib="0" loc="(460,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="SIGOUT"/>
+      <a name="output" val="true"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(460,280)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="spacing" val="6"/>
+    </comp>
+    <comp loc="(440,290)" name="Norb_STD_1B2T_Delayer"/>
+    <comp loc="(440,350)" name="Norb_STD_1B2T_Delayer"/>
+    <wire from="(180,440)" to="(210,440)"/>
+    <wire from="(200,290)" to="(220,290)"/>
+    <wire from="(200,350)" to="(220,350)"/>
+    <wire from="(210,310)" to="(210,370)"/>
+    <wire from="(210,310)" to="(220,310)"/>
+    <wire from="(210,370)" to="(210,440)"/>
+    <wire from="(210,370)" to="(220,370)"/>
+  </circuit>
+  <circuit name="Norb_STD_8B2T_Delayer">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Norb_STD_8B2T_Delayer"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(180,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="SIGIN"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(180,360)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="bit4" val="2"/>
+      <a name="bit5" val="2"/>
+      <a name="bit6" val="3"/>
+      <a name="bit7" val="3"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="8"/>
+      <a name="spacing" val="6"/>
+    </comp>
+    <comp lib="0" loc="(180,440)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLOCK"/>
+    </comp>
+    <comp lib="0" loc="(460,160)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="SIGOUT"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(460,160)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="bit4" val="2"/>
+      <a name="bit5" val="2"/>
+      <a name="bit6" val="3"/>
+      <a name="bit7" val="3"/>
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="8"/>
+      <a name="spacing" val="6"/>
+    </comp>
+    <comp loc="(440,170)" name="Norb_STD_2B2T_Delayer"/>
+    <comp loc="(440,230)" name="Norb_STD_2B2T_Delayer"/>
+    <comp loc="(440,290)" name="Norb_STD_2B2T_Delayer"/>
+    <comp loc="(440,350)" name="Norb_STD_2B2T_Delayer"/>
+    <wire from="(180,440)" to="(210,440)"/>
+    <wire from="(200,170)" to="(220,170)"/>
+    <wire from="(200,230)" to="(220,230)"/>
+    <wire from="(200,290)" to="(220,290)"/>
+    <wire from="(200,350)" to="(220,350)"/>
+    <wire from="(210,190)" to="(210,250)"/>
+    <wire from="(210,190)" to="(220,190)"/>
+    <wire from="(210,250)" to="(210,310)"/>
+    <wire from="(210,250)" to="(220,250)"/>
+    <wire from="(210,310)" to="(210,370)"/>
+    <wire from="(210,310)" to="(220,310)"/>
+    <wire from="(210,370)" to="(210,440)"/>
+    <wire from="(210,370)" to="(220,370)"/>
+  </circuit>
+  <circuit name="Norb_STD_32B2T_Delayer">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Norb_STD_32B2T_Delayer"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(180,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="SIGIN"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(180,360)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="1"/>
+      <a name="bit15" val="1"/>
+      <a name="bit16" val="2"/>
+      <a name="bit17" val="2"/>
+      <a name="bit18" val="2"/>
+      <a name="bit19" val="2"/>
+      <a name="bit2" val="0"/>
+      <a name="bit20" val="2"/>
+      <a name="bit21" val="2"/>
+      <a name="bit22" val="2"/>
+      <a name="bit23" val="2"/>
+      <a name="bit24" val="3"/>
+      <a name="bit25" val="3"/>
+      <a name="bit26" val="3"/>
+      <a name="bit27" val="3"/>
+      <a name="bit28" val="3"/>
+      <a name="bit29" val="3"/>
+      <a name="bit3" val="0"/>
+      <a name="bit30" val="3"/>
+      <a name="bit31" val="3"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="32"/>
+      <a name="spacing" val="6"/>
+    </comp>
+    <comp lib="0" loc="(180,440)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLOCK"/>
+    </comp>
+    <comp lib="0" loc="(460,160)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="SIGOUT"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(460,160)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="1"/>
+      <a name="bit15" val="1"/>
+      <a name="bit16" val="2"/>
+      <a name="bit17" val="2"/>
+      <a name="bit18" val="2"/>
+      <a name="bit19" val="2"/>
+      <a name="bit2" val="0"/>
+      <a name="bit20" val="2"/>
+      <a name="bit21" val="2"/>
+      <a name="bit22" val="2"/>
+      <a name="bit23" val="2"/>
+      <a name="bit24" val="3"/>
+      <a name="bit25" val="3"/>
+      <a name="bit26" val="3"/>
+      <a name="bit27" val="3"/>
+      <a name="bit28" val="3"/>
+      <a name="bit29" val="3"/>
+      <a name="bit3" val="0"/>
+      <a name="bit30" val="3"/>
+      <a name="bit31" val="3"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="32"/>
+      <a name="spacing" val="6"/>
+    </comp>
+    <comp loc="(440,170)" name="Norb_STD_8B2T_Delayer"/>
+    <comp loc="(440,230)" name="Norb_STD_8B2T_Delayer"/>
+    <comp loc="(440,290)" name="Norb_STD_8B2T_Delayer"/>
+    <comp loc="(440,350)" name="Norb_STD_8B2T_Delayer"/>
+    <wire from="(180,440)" to="(210,440)"/>
+    <wire from="(200,170)" to="(220,170)"/>
+    <wire from="(200,230)" to="(220,230)"/>
+    <wire from="(200,290)" to="(220,290)"/>
+    <wire from="(200,350)" to="(220,350)"/>
+    <wire from="(210,190)" to="(210,250)"/>
+    <wire from="(210,190)" to="(220,190)"/>
+    <wire from="(210,250)" to="(210,310)"/>
+    <wire from="(210,250)" to="(220,250)"/>
+    <wire from="(210,310)" to="(210,370)"/>
+    <wire from="(210,310)" to="(220,310)"/>
+    <wire from="(210,370)" to="(210,440)"/>
+    <wire from="(210,370)" to="(220,370)"/>
+  </circuit>
   <circuit name="Norb_STD_1B8B_Padder">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Norb_STD_1B8B_Padder"/>
