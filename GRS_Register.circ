@@ -505,9 +505,6 @@
       <a name="label" val="Inputaddress"/>
       <a name="width" val="5"/>
     </comp>
-    <comp lib="4" loc="(1350,130)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-    </comp>
     <comp lib="4" loc="(610,730)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="width" val="32"/>
@@ -4052,5 +4049,92 @@
     <wire from="(340,340)" to="(340,350)"/>
     <wire from="(340,350)" to="(390,350)"/>
     <wire from="(400,260)" to="(420,260)"/>
+  </circuit>
+  <circuit name="Locked">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Locked"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1110,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(1270,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(190,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="RESET"/>
+    </comp>
+    <comp lib="0" loc="(190,380)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="ALLOW"/>
+    </comp>
+    <comp lib="0" loc="(190,480)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="SET"/>
+    </comp>
+    <comp lib="0" loc="(440,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(610,110)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(770,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(780,440)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(1240,320)" name="OR Gate"/>
+    <comp lib="1" loc="(420,300)" name="AND Gate"/>
+    <comp lib="1" loc="(420,460)" name="AND Gate"/>
+    <comp lib="1" loc="(580,110)" name="AND Gate"/>
+    <comp lib="1" loc="(650,320)" name="NOR Gate"/>
+    <comp lib="1" loc="(650,440)" name="NOR Gate"/>
+    <wire from="(1110,300)" to="(1190,300)"/>
+    <wire from="(1140,340)" to="(1140,370)"/>
+    <wire from="(1140,340)" to="(1190,340)"/>
+    <wire from="(1140,370)" to="(1260,370)"/>
+    <wire from="(1240,320)" to="(1260,320)"/>
+    <wire from="(1260,320)" to="(1260,370)"/>
+    <wire from="(1260,320)" to="(1270,320)"/>
+    <wire from="(190,280)" to="(370,280)"/>
+    <wire from="(190,380)" to="(320,380)"/>
+    <wire from="(190,480)" to="(370,480)"/>
+    <wire from="(320,320)" to="(320,380)"/>
+    <wire from="(320,320)" to="(370,320)"/>
+    <wire from="(320,380)" to="(320,440)"/>
+    <wire from="(320,440)" to="(370,440)"/>
+    <wire from="(420,300)" to="(590,300)"/>
+    <wire from="(420,460)" to="(590,460)"/>
+    <wire from="(440,90)" to="(530,90)"/>
+    <wire from="(480,130)" to="(480,160)"/>
+    <wire from="(480,130)" to="(530,130)"/>
+    <wire from="(480,160)" to="(600,160)"/>
+    <wire from="(520,340)" to="(520,400)"/>
+    <wire from="(520,340)" to="(590,340)"/>
+    <wire from="(520,400)" to="(720,400)"/>
+    <wire from="(530,90)" to="(530,100)"/>
+    <wire from="(540,360)" to="(540,420)"/>
+    <wire from="(540,360)" to="(720,360)"/>
+    <wire from="(540,420)" to="(590,420)"/>
+    <wire from="(580,110)" to="(600,110)"/>
+    <wire from="(600,110)" to="(600,160)"/>
+    <wire from="(600,110)" to="(610,110)"/>
+    <wire from="(650,320)" to="(720,320)"/>
+    <wire from="(650,440)" to="(720,440)"/>
+    <wire from="(720,320)" to="(720,360)"/>
+    <wire from="(720,320)" to="(770,320)"/>
+    <wire from="(720,400)" to="(720,440)"/>
+    <wire from="(720,440)" to="(780,440)"/>
   </circuit>
 </project>
