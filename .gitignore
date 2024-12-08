@@ -137,3 +137,8 @@ dmypy.json
 .vscode/
 .vscode/*
 Norb_StdLib.circ.orig
+
+
+# Powerpoint files
+*.pptx
+*.ppt
