@@ -12352,7 +12352,7 @@
     <comp lib="4" loc="(130,1650)" name="ROM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 8 32
-0 10b7 1137 2081b3 10093 18113 ffffd06f
+0 10b7 1137 2081b3 10093 18113 f8f13 ffcf0f93
 </a>
       <a name="dataWidth" val="32"/>
     </comp>
