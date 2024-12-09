@@ -129,6 +129,7 @@ dmypy.json
 
 # Logisim autosave
 *.autosave
+*_autosave.circ
 
 # Purref related files
 *.pur
