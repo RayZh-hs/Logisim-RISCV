@@ -18,7 +18,7 @@
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2">
     <tool name="Multiplexer">
-      <a name="facing" val="north"/>
+      <a name="facing" val="south"/>
     </tool>
   </lib>
   <lib desc="#Arithmetic" name="3"/>
@@ -12025,6 +12025,11 @@
     <a name="circuit" val="Norb_CPU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(120,1610)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(1200,460)" name="Constant"/>
     <comp lib="0" loc="(1230,1920)" name="Bit Extender">
       <a name="in_width" val="20"/>
@@ -12051,10 +12056,6 @@
       <a name="value" val="0x0"/>
       <a name="width" val="5"/>
     </comp>
-    <comp lib="0" loc="(140,1830)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="width" val="8"/>
-    </comp>
     <comp lib="0" loc="(1610,1470)" name="Constant">
       <a name="value" val="0x1f"/>
       <a name="width" val="5"/>
@@ -12075,6 +12076,10 @@
       <a name="facing" val="south"/>
       <a name="value" val="0x3"/>
       <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(180,1650)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
     </comp>
     <comp lib="0" loc="(220,140)" name="Clock">
       <a name="highDuration" val="2"/>
@@ -12219,6 +12224,11 @@
     <comp lib="1" loc="(920,1760)" name="OR Gate">
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
+    </comp>
+    <comp lib="2" loc="(130,1670)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="width" val="8"/>
     </comp>
     <comp lib="2" loc="(1320,1570)" name="Multiplexer">
       <a name="facing" val="north"/>
@@ -12470,6 +12480,7 @@
     <wire from="(1160,1860)" to="(1160,2320)"/>
     <wire from="(1170,1860)" to="(1170,2480)"/>
     <wire from="(1180,1860)" to="(1180,2640)"/>
+    <wire from="(120,1610)" to="(120,1640)"/>
     <wire from="(1200,460)" to="(1840,460)"/>
     <wire from="(1230,1860)" to="(1230,1920)"/>
     <wire from="(1230,2020)" to="(1240,2020)"/>
@@ -12488,6 +12499,8 @@
     <wire from="(1260,1860)" to="(1260,2280)"/>
     <wire from="(1270,1860)" to="(1270,2440)"/>
     <wire from="(1290,1860)" to="(1290,2140)"/>
+    <wire from="(130,1670)" to="(130,1830)"/>
+    <wire from="(130,1830)" to="(140,1830)"/>
     <wire from="(1300,1860)" to="(1300,2300)"/>
     <wire from="(1310,1600)" to="(1310,1830)"/>
     <wire from="(1310,1860)" to="(1310,2780)"/>
@@ -12518,6 +12531,7 @@
     <wire from="(1450,1650)" to="(1850,1650)"/>
     <wire from="(1460,1860)" to="(1460,2500)"/>
     <wire from="(1470,1860)" to="(1470,2660)"/>
+    <wire from="(150,1650)" to="(180,1650)"/>
     <wire from="(1500,1090)" to="(2100,1090)"/>
     <wire from="(1500,750)" to="(1500,1090)"/>
     <wire from="(1500,750)" to="(1530,750)"/>
