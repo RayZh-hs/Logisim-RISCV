@@ -1,7 +1,7 @@
 # Logisim-RISCV
 A RISCV implementation in Logisim Evolution.
 
-![RISCV-CPU](./img/RISCV-CU.png "Control Unit for RISC-V CPU")
+![RISCV-CPU](./img/RISCV-CU-hi-res.png "Control Unit for RISC-V CPU")
 
 Note that this implementation is experimental, and some functinoalities are not implemented. Yet the result is Turing Complete and it has been a greatly educating experience.
 
